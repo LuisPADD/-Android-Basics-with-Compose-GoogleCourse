@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BusinessCard</string>
+    <string name="name">Luis Fernando Pádua</string>
+    <string name="position">Android Developer Extraordinaire</string>
+    <string name="phone_number">+55 (55) 99999-9999</string>
+    <string name="share_contact">\@LuisFernandoPadua</string>
+    <string name="email">LuisPadua@email.com</string>
+</resources>
