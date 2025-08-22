@@ -135,9 +135,9 @@ fun Screen(modifier: Modifier = Modifier) {
     Column (modifier = modifier
         .background(Color(0xFFD2E8D4))) {
         Box(
-            modifier
-                .fillMaxSize()
-                .padding(16.dp)
+//            modifier
+//                .fillMaxSize()
+//                .padding(16.dp)
         ) {
             BotTop(
                 title = stringResource(R.string.name),
