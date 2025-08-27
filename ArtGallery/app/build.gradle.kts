@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tip_calc"
+    namespace = "com.example.artgallery"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.tip_calc"
+        applicationId = "com.example.artgallery"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -56,5 +56,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    testImplementation(kotlin("test"))
 }

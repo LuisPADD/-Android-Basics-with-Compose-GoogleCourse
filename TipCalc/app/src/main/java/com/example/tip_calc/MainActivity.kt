@@ -1,6 +1,7 @@
 package com.example.tip_calc
 
-import android.icu.text.NumberFormat
+
+import java.text.NumberFormat
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -43,6 +44,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.tip_calc.ui.theme.TipCalcTheme
 import androidx.compose.material3.Icon
+import org.jetbrains.annotations.VisibleForTesting
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -176,13 +178,15 @@ fun RoundTheTipRow(roundUp: Boolean,
     }
 }
 
-private fun calculateTip(amount: Double, tipPercent: Double, roundUp: Boolean): String {
+@VisibleForTesting
+internal fun calculateTip(amount: Double, tipPercent: Double, roundUp: Boolean): String {
     var tip = tipPercent / 100 * amount
     if (roundUp) {
         tip = kotlin.math.ceil(tip)
     }
     return NumberFormat.getCurrencyInstance().format(tip)
 }
+
 
 
 @Preview(showBackground = true)
